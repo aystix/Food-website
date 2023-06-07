@@ -13,7 +13,7 @@
     --bg-color:#1e1c2a;
     --big-font:3.2rem;
     --h2-font:1.8rem;
-    --p-font:0.9rem;
+    --p-font:1.3rem;
 }
 *::selection{
     background: var(--main-color);
@@ -143,18 +143,18 @@ header{
     }
     .heading h2{
         font-size: var(--h2-font);
-        margin-bottom: 10px;
+        margin-bottom: 2px;
     }
     .menu-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 5px;
 
     }
     .box {
         position: relative;
-        margin-top: 4rem;
+        margin-top: 2rem;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -227,15 +227,58 @@ header{
             background: #feeee7;
             padding: 70px 0;
             text-align: center;
-            width: 66%;
+            width: 55%;
             margin: 100px auto;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
         }
         .cta h2 {
             color: var(--bg-color);
-            font-size: 2rem;
-            margin-bottom: 30px;
+            font-size: 1.9rem;
+            margin-bottom: 10px;
         }
+        #talk-btn{
+            width: 20%;
+            margin: 0 auto;
+            margin-bottom: 17px;
+            border: none;
+        }
+        textarea {
+            width: 70%;
+            margin: 0 auto;
+            padding: 10px;
+            display: none;
+            border: solid 3px var(--main-color);
+        }
+        #send-btn{
+            width: 25%;
+            margin: 0 auto;
+            margin-top: 10px;
+            border: none;
+            display: none;
+        }
+        form{
+            margin: 0 auto;
+            width: 100%;
+            display: none;
+            
+        }
+        form input {
+            height: 35px;
+            border-radius: 10px;
+            padding: 5px;
+            border: solid 3px var(--main-color);
+            margin-bottom: 15px;
+            width: 70%;
+        }
+        form p {
+            color: var(--main-color);
+            font-size: 15px;
+            margin-right: 20px;
+            font-weight: 400;
+        }
+        
         .main {
             display: flex;
             flex-wrap: wrap;
@@ -314,7 +357,7 @@ header{
                 :root {
                     --big-font:2.5rem;
                     --h2-font:1.5rem;
-                    --p-font:0.9rem;
+                    --p-font:1.2rem;
                 }
               
             #menu-icon{
@@ -356,6 +399,7 @@ header{
             }
             .about-text {
                 width: 100%;
+                text-align: center;
             }
             .menu-container{
                 flex-direction: column;
@@ -368,6 +412,18 @@ header{
             }
             .cta {
                 width: 90%;
+            }
+            .cta h2 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            #talk-btn{
+                width: 40%;
+                margin-bottom: 15px;
+            }
+            textarea {
+                margin: 0 auto;
+                padding: 5px;
             }
             .main{
                 flex-direction: column;
